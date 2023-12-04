@@ -1,5 +1,15 @@
 import { rest } from "msw";
 
+type UserRank = "하사" | "중사" | "상사";
+
+interface User {
+  uid: number;
+  uname: string;
+  unumber: number;
+  ubirth: number;
+  urank: UserRank;
+}
+
 import type {
   RestRequest,
   ResponseComposition,
